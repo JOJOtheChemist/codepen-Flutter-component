@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'pricing_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Project Cards',
+      title: 'Pricing UI',
       theme: ThemeData(
         useMaterial3: true,
-        textTheme: GoogleFonts.nunitoTextTheme(),
+        textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      home: const ProjectCardsScreen(),
+      home: const PricingScreen(),
     );
   }
 }
